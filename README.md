@@ -13,7 +13,7 @@ Just pick a set, download the JSON file, and upload it into your compatible tool
 
 <a href="pocket_tcg/all_pocket_tcg_cards.json" download="all_pocket_tcg_cards.json"><img alt="All Pokémon TCG Pocket Cards" src="https://img.shields.io/badge/All%20Pok%C3%A9mon%20TCG%20Pocket%20Cards-Download%20JSON-7c3aed?style=for-the-badge&amp;labelColor=111827"></a>
 
-<!-- [![All Cards Combined](https://img.shields.io/badge/All%20Cards%20Combined-Download%20JSON-059669?style=for-the-badge&labelColor=111827)](all_cards_combined.json) -->
+<!-- <a href="all_cards_combined.json" download="all_cards_combined.json"><img alt="All Cards Combined" src="https://img.shields.io/badge/All%20Cards%20Combined-Download%20JSON-059669?style=for-the-badge&amp;labelColor=111827"></a> -->
 
 </div>
 
