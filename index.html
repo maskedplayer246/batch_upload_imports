@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pokémon TCG JSON Downloads</title>
-  <meta name="description" content="Simple JSON card downloads for Pokémon TCG and Pokémon TCG Pocket sets.">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Pokémon TCG JSON Downloads</title>
+<meta content="Simple JSON card downloads for Pokémon TCG and Pokémon TCG Pocket sets." name="description"/>
+<style>
     :root {
       --bg: #0b1020;
       --panel: rgba(255, 255, 255, 0.075);
@@ -249,919 +250,921 @@
       .set-grid { grid-template-columns: 1fr; }
       .download-btn { min-width: 112px; }
     }
-  </style>
+  
+    button.hero-download, button.download-btn { font-family: inherit; appearance: none; -webkit-appearance: none; }
+    button.hero-download { border: 0; }
+    button.download-btn { border: 0; }
+    button.hero-download:focus-visible, button.download-btn:focus-visible { outline: 3px solid rgba(255,255,255,.85); outline-offset: 3px; }
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header class="hero">
-      <div class="eyebrow">Card data</div>
-      <h1>Pokémon TCG JSON Downloads</h1>
-      <p class="subtitle">Simple JSON card downloads for fans, players, collectors, and non-developers. No coding. No API setup. Just choose a set and click download.</p>
-      <div class="hero-buttons">
-        <a class="hero-download main" href="main_tcg/all_main_tcg_cards.json" download="all_main_tcg_cards.json" data-file-name="all_main_tcg_cards.json">
-      <strong>All Main Pokémon TCG Cards</strong>
-      <span>Download JSON</span>
-    </a>
-<a class="hero-download pocket" href="pocket_tcg/all_pocket_tcg_cards.json" download="all_pocket_tcg_cards.json" data-file-name="all_pocket_tcg_cards.json">
-      <strong>All Pokémon TCG Pocket Cards</strong>
-      <span>Download JSON</span>
-    </a>
-      </div>
-      <div class="notice">These buttons are designed for GitHub Pages. They download the JSON file directly instead of sending people to a confusing code preview page.</div>
-    </header>
-
-    <nav class="toolbar" aria-label="Page shortcuts">
-      <input id="search" type="search" placeholder="Search for a set, code, or file name..." autocomplete="off">
-      <a class="quick-link" href="#main-pokemon-tcg-sets">Main TCG</a>
-      <a class="quick-link" href="#pokemon-tcg-pocket-sets">Pocket</a>
-    </nav>
-
-    <section class="about" aria-label="About this page">
-      <div class="about-card"><strong>Made for non-developers</strong>Download card data without using code, APIs, command lines, or developer tools.</div>
-      <div class="about-card"><strong>JSON format</strong>Each file is ready to save and upload into a compatible tool or fan project.</div>
-      <div class="about-card"><strong>Credit</strong>Credit for the JSON files goes to the Pokémon TCG Developers and the Pokémon TCG data/API community.</div>
-    </section>
-
-    <main id="downloads">
-      <h1 class="major" id="main-pok-mon-tcg-sets">Main Pokémon TCG Sets</h1>
+<div class="wrap">
+<header class="hero">
+<div class="eyebrow">Simulator-friendly card data</div>
+<h1>Pokémon TCG JSON Downloads</h1>
+<p class="subtitle">Simple JSON card downloads for fans, players, collectors, and non-developers. No coding. No API setup. Just choose a set and click download.</p>
+<div class="hero-buttons">
+<button class="hero-download main" data-file-name="all_main_tcg_cards.json" data-href="main_tcg/all_main_tcg_cards.json" type="button">
+<strong>All Main Pokémon TCG Cards</strong>
+<span>Download JSON</span>
+</button>
+<button class="hero-download pocket" data-file-name="all_pocket_tcg_cards.json" data-href="pocket_tcg/all_pocket_tcg_cards.json" type="button">
+<strong>All Pokémon TCG Pocket Cards</strong>
+<span>Download JSON</span>
+</button>
+</div>
+<div class="notice">These buttons are designed for GitHub Pages. They download the JSON file directly instead of sending people to a confusing code preview page.</div>
+</header>
+<nav aria-label="Page shortcuts" class="toolbar">
+<input autocomplete="off" id="search" placeholder="Search for a set, code, or file name..." type="search"/>
+<a class="quick-link" href="#main-pokemon-tcg-sets">Main TCG</a>
+<a class="quick-link" href="#pokemon-tcg-pocket-sets">Pocket</a>
+</nav>
+<section aria-label="About this page" class="about">
+<div class="about-card"><strong>Made for non-developers</strong>Download card data without using code, APIs, command lines, or developer tools.</div>
+<div class="about-card"><strong>JSON format</strong>Each file is ready to save and upload into a compatible tool or fan project.</div>
+<div class="about-card"><strong>Credit</strong>Credit for the JSON files goes to the Pokémon TCG Developers and the Pokémon TCG data/API community.</div>
+</section>
+<main id="downloads">
+<h1 class="major" id="main-pok-mon-tcg-sets">Main Pokémon TCG Sets</h1>
 <section class="set-section main-section" id="download-all-main-pok-mon-tcg-cards">
 <div class="section-heading"><h2>Download All Main Pokémon TCG Cards</h2><span>1 download</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="all main pokémon tcg cards  all_main_tcg_cards.json">
-  <div class="set-info">
-    <h3>All Main Pokémon TCG Cards</h3>
-    <p class="set-code">all_main_tcg_cards.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/all_main_tcg_cards.json" download="all_main_tcg_cards.json" aria-label="Download All Main Pokémon TCG Cards JSON" data-file-name="all_main_tcg_cards.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>All Main Pokémon TCG Cards</h3>
+<p class="set-code">all_main_tcg_cards.json</p>
+</div>
+<button aria-label="Download All Main Pokémon TCG Cards JSON" class="download-btn main" data-file-name="all_main_tcg_cards.json" data-href="main_tcg/all_main_tcg_cards.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="scarlet-violet-mega-evolution-era">
 <div class="section-heading"><h2>Scarlet &amp; Violet / Mega Evolution Era</h2><span>21 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="scarlet &amp; violet  sv1.json">
-  <div class="set-info">
-    <h3>Scarlet &amp; Violet</h3>
-    <p class="set-code">sv1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv1.json" download="sv1.json" aria-label="Download Scarlet &amp; Violet JSON" data-file-name="sv1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Scarlet &amp; Violet</h3>
+<p class="set-code">sv1.json</p>
+</div>
+<button aria-label="Download Scarlet &amp; Violet JSON" class="download-btn main" data-file-name="sv1.json" data-href="main_tcg/sv1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="paldea evolved  sv2.json">
-  <div class="set-info">
-    <h3>Paldea Evolved</h3>
-    <p class="set-code">sv2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv2.json" download="sv2.json" aria-label="Download Paldea Evolved JSON" data-file-name="sv2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Paldea Evolved</h3>
+<p class="set-code">sv2.json</p>
+</div>
+<button aria-label="Download Paldea Evolved JSON" class="download-btn main" data-file-name="sv2.json" data-href="main_tcg/sv2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="obsidian flames  sv3.json">
-  <div class="set-info">
-    <h3>Obsidian Flames</h3>
-    <p class="set-code">sv3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv3.json" download="sv3.json" aria-label="Download Obsidian Flames JSON" data-file-name="sv3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Obsidian Flames</h3>
+<p class="set-code">sv3.json</p>
+</div>
+<button aria-label="Download Obsidian Flames JSON" class="download-btn main" data-file-name="sv3.json" data-href="main_tcg/sv3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="151  sv3pt5.json">
-  <div class="set-info">
-    <h3>151</h3>
-    <p class="set-code">sv3pt5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv3pt5.json" download="sv3pt5.json" aria-label="Download 151 JSON" data-file-name="sv3pt5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>151</h3>
+<p class="set-code">sv3pt5.json</p>
+</div>
+<button aria-label="Download 151 JSON" class="download-btn main" data-file-name="sv3pt5.json" data-href="main_tcg/sv3pt5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="paradox rift  sv4.json">
-  <div class="set-info">
-    <h3>Paradox Rift</h3>
-    <p class="set-code">sv4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv4.json" download="sv4.json" aria-label="Download Paradox Rift JSON" data-file-name="sv4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Paradox Rift</h3>
+<p class="set-code">sv4.json</p>
+</div>
+<button aria-label="Download Paradox Rift JSON" class="download-btn main" data-file-name="sv4.json" data-href="main_tcg/sv4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="paldean fates  sv4pt5.json">
-  <div class="set-info">
-    <h3>Paldean Fates</h3>
-    <p class="set-code">sv4pt5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv4pt5.json" download="sv4pt5.json" aria-label="Download Paldean Fates JSON" data-file-name="sv4pt5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Paldean Fates</h3>
+<p class="set-code">sv4pt5.json</p>
+</div>
+<button aria-label="Download Paldean Fates JSON" class="download-btn main" data-file-name="sv4pt5.json" data-href="main_tcg/sv4pt5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="temporal forces  sv5.json">
-  <div class="set-info">
-    <h3>Temporal Forces</h3>
-    <p class="set-code">sv5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv5.json" download="sv5.json" aria-label="Download Temporal Forces JSON" data-file-name="sv5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Temporal Forces</h3>
+<p class="set-code">sv5.json</p>
+</div>
+<button aria-label="Download Temporal Forces JSON" class="download-btn main" data-file-name="sv5.json" data-href="main_tcg/sv5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="twilight masquerade  sv6.json">
-  <div class="set-info">
-    <h3>Twilight Masquerade</h3>
-    <p class="set-code">sv6.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv6.json" download="sv6.json" aria-label="Download Twilight Masquerade JSON" data-file-name="sv6.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Twilight Masquerade</h3>
+<p class="set-code">sv6.json</p>
+</div>
+<button aria-label="Download Twilight Masquerade JSON" class="download-btn main" data-file-name="sv6.json" data-href="main_tcg/sv6.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="shrouded fable  sv6pt5.json">
-  <div class="set-info">
-    <h3>Shrouded Fable</h3>
-    <p class="set-code">sv6pt5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv6pt5.json" download="sv6pt5.json" aria-label="Download Shrouded Fable JSON" data-file-name="sv6pt5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Shrouded Fable</h3>
+<p class="set-code">sv6pt5.json</p>
+</div>
+<button aria-label="Download Shrouded Fable JSON" class="download-btn main" data-file-name="sv6pt5.json" data-href="main_tcg/sv6pt5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="stellar crown  sv7.json">
-  <div class="set-info">
-    <h3>Stellar Crown</h3>
-    <p class="set-code">sv7.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv7.json" download="sv7.json" aria-label="Download Stellar Crown JSON" data-file-name="sv7.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Stellar Crown</h3>
+<p class="set-code">sv7.json</p>
+</div>
+<button aria-label="Download Stellar Crown JSON" class="download-btn main" data-file-name="sv7.json" data-href="main_tcg/sv7.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="surging sparks  sv8.json">
-  <div class="set-info">
-    <h3>Surging Sparks</h3>
-    <p class="set-code">sv8.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv8.json" download="sv8.json" aria-label="Download Surging Sparks JSON" data-file-name="sv8.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Surging Sparks</h3>
+<p class="set-code">sv8.json</p>
+</div>
+<button aria-label="Download Surging Sparks JSON" class="download-btn main" data-file-name="sv8.json" data-href="main_tcg/sv8.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="prismatic evolutions  sv8pt5.json">
-  <div class="set-info">
-    <h3>Prismatic Evolutions</h3>
-    <p class="set-code">sv8pt5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv8pt5.json" download="sv8pt5.json" aria-label="Download Prismatic Evolutions JSON" data-file-name="sv8pt5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Prismatic Evolutions</h3>
+<p class="set-code">sv8pt5.json</p>
+</div>
+<button aria-label="Download Prismatic Evolutions JSON" class="download-btn main" data-file-name="sv8pt5.json" data-href="main_tcg/sv8pt5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="journey together  sv9.json">
-  <div class="set-info">
-    <h3>Journey Together</h3>
-    <p class="set-code">sv9.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv9.json" download="sv9.json" aria-label="Download Journey Together JSON" data-file-name="sv9.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Journey Together</h3>
+<p class="set-code">sv9.json</p>
+</div>
+<button aria-label="Download Journey Together JSON" class="download-btn main" data-file-name="sv9.json" data-href="main_tcg/sv9.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="destined rivals  sv10.json">
-  <div class="set-info">
-    <h3>Destined Rivals</h3>
-    <p class="set-code">sv10.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sv10.json" download="sv10.json" aria-label="Download Destined Rivals JSON" data-file-name="sv10.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Destined Rivals</h3>
+<p class="set-code">sv10.json</p>
+</div>
+<button aria-label="Download Destined Rivals JSON" class="download-btn main" data-file-name="sv10.json" data-href="main_tcg/sv10.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="black bolt  zsv10pt5.json">
-  <div class="set-info">
-    <h3>Black Bolt</h3>
-    <p class="set-code">zsv10pt5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/zsv10pt5.json" download="zsv10pt5.json" aria-label="Download Black Bolt JSON" data-file-name="zsv10pt5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Black Bolt</h3>
+<p class="set-code">zsv10pt5.json</p>
+</div>
+<button aria-label="Download Black Bolt JSON" class="download-btn main" data-file-name="zsv10pt5.json" data-href="main_tcg/zsv10pt5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="white flare  zsv10pt5.json">
-  <div class="set-info">
-    <h3>White Flare</h3>
-    <p class="set-code">zsv10pt5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/zsv10pt5.json" download="zsv10pt5.json" aria-label="Download White Flare JSON" data-file-name="zsv10pt5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>White Flare</h3>
+<p class="set-code">zsv10pt5.json</p>
+</div>
+<button aria-label="Download White Flare JSON" class="download-btn main" data-file-name="zsv10pt5.json" data-href="main_tcg/zsv10pt5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="mega evolution  me1.json">
-  <div class="set-info">
-    <h3>Mega Evolution</h3>
-    <p class="set-code">me1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/me1.json" download="me1.json" aria-label="Download Mega Evolution JSON" data-file-name="me1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Mega Evolution</h3>
+<p class="set-code">me1.json</p>
+</div>
+<button aria-label="Download Mega Evolution JSON" class="download-btn main" data-file-name="me1.json" data-href="main_tcg/me1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="phantasmal flames  me2.json">
-  <div class="set-info">
-    <h3>Phantasmal Flames</h3>
-    <p class="set-code">me2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/me2.json" download="me2.json" aria-label="Download Phantasmal Flames JSON" data-file-name="me2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Phantasmal Flames</h3>
+<p class="set-code">me2.json</p>
+</div>
+<button aria-label="Download Phantasmal Flames JSON" class="download-btn main" data-file-name="me2.json" data-href="main_tcg/me2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ascended heroes  me2pt5.json">
-  <div class="set-info">
-    <h3>Ascended Heroes</h3>
-    <p class="set-code">me2pt5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/me2pt5.json" download="me2pt5.json" aria-label="Download Ascended Heroes JSON" data-file-name="me2pt5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Ascended Heroes</h3>
+<p class="set-code">me2pt5.json</p>
+</div>
+<button aria-label="Download Ascended Heroes JSON" class="download-btn main" data-file-name="me2pt5.json" data-href="main_tcg/me2pt5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="perfect order  me3.json">
-  <div class="set-info">
-    <h3>Perfect Order</h3>
-    <p class="set-code">me3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/me3.json" download="me3.json" aria-label="Download Perfect Order JSON" data-file-name="me3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Perfect Order</h3>
+<p class="set-code">me3.json</p>
+</div>
+<button aria-label="Download Perfect Order JSON" class="download-btn main" data-file-name="me3.json" data-href="main_tcg/me3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="chaos rising  me4.json">
-  <div class="set-info">
-    <h3>Chaos Rising</h3>
-    <p class="set-code">me4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/me4.json" download="me4.json" aria-label="Download Chaos Rising JSON" data-file-name="me4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Chaos Rising</h3>
+<p class="set-code">me4.json</p>
+</div>
+<button aria-label="Download Chaos Rising JSON" class="download-btn main" data-file-name="me4.json" data-href="main_tcg/me4.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="sword-shield-era">
 <div class="section-heading"><h2>Sword &amp; Shield Era</h2><span>17 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="sword &amp; shield  swsh1.json">
-  <div class="set-info">
-    <h3>Sword &amp; Shield</h3>
-    <p class="set-code">swsh1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh1.json" download="swsh1.json" aria-label="Download Sword &amp; Shield JSON" data-file-name="swsh1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Sword &amp; Shield</h3>
+<p class="set-code">swsh1.json</p>
+</div>
+<button aria-label="Download Sword &amp; Shield JSON" class="download-btn main" data-file-name="swsh1.json" data-href="main_tcg/swsh1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="rebel clash  swsh2.json">
-  <div class="set-info">
-    <h3>Rebel Clash</h3>
-    <p class="set-code">swsh2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh2.json" download="swsh2.json" aria-label="Download Rebel Clash JSON" data-file-name="swsh2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Rebel Clash</h3>
+<p class="set-code">swsh2.json</p>
+</div>
+<button aria-label="Download Rebel Clash JSON" class="download-btn main" data-file-name="swsh2.json" data-href="main_tcg/swsh2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="darkness ablaze  swsh3.json">
-  <div class="set-info">
-    <h3>Darkness Ablaze</h3>
-    <p class="set-code">swsh3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh3.json" download="swsh3.json" aria-label="Download Darkness Ablaze JSON" data-file-name="swsh3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Darkness Ablaze</h3>
+<p class="set-code">swsh3.json</p>
+</div>
+<button aria-label="Download Darkness Ablaze JSON" class="download-btn main" data-file-name="swsh3.json" data-href="main_tcg/swsh3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="champion’s path  swsh35.json">
-  <div class="set-info">
-    <h3>Champion’s Path</h3>
-    <p class="set-code">swsh35.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh35.json" download="swsh35.json" aria-label="Download Champion’s Path JSON" data-file-name="swsh35.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Champion’s Path</h3>
+<p class="set-code">swsh35.json</p>
+</div>
+<button aria-label="Download Champion’s Path JSON" class="download-btn main" data-file-name="swsh35.json" data-href="main_tcg/swsh35.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="vivid voltage  swsh4.json">
-  <div class="set-info">
-    <h3>Vivid Voltage</h3>
-    <p class="set-code">swsh4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh4.json" download="swsh4.json" aria-label="Download Vivid Voltage JSON" data-file-name="swsh4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Vivid Voltage</h3>
+<p class="set-code">swsh4.json</p>
+</div>
+<button aria-label="Download Vivid Voltage JSON" class="download-btn main" data-file-name="swsh4.json" data-href="main_tcg/swsh4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="shining fates  swsh45.json">
-  <div class="set-info">
-    <h3>Shining Fates</h3>
-    <p class="set-code">swsh45.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh45.json" download="swsh45.json" aria-label="Download Shining Fates JSON" data-file-name="swsh45.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Shining Fates</h3>
+<p class="set-code">swsh45.json</p>
+</div>
+<button aria-label="Download Shining Fates JSON" class="download-btn main" data-file-name="swsh45.json" data-href="main_tcg/swsh45.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="battle styles  swsh5.json">
-  <div class="set-info">
-    <h3>Battle Styles</h3>
-    <p class="set-code">swsh5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh5.json" download="swsh5.json" aria-label="Download Battle Styles JSON" data-file-name="swsh5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Battle Styles</h3>
+<p class="set-code">swsh5.json</p>
+</div>
+<button aria-label="Download Battle Styles JSON" class="download-btn main" data-file-name="swsh5.json" data-href="main_tcg/swsh5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="chilling reign  swsh6.json">
-  <div class="set-info">
-    <h3>Chilling Reign</h3>
-    <p class="set-code">swsh6.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh6.json" download="swsh6.json" aria-label="Download Chilling Reign JSON" data-file-name="swsh6.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Chilling Reign</h3>
+<p class="set-code">swsh6.json</p>
+</div>
+<button aria-label="Download Chilling Reign JSON" class="download-btn main" data-file-name="swsh6.json" data-href="main_tcg/swsh6.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="evolving skies  swsh7.json">
-  <div class="set-info">
-    <h3>Evolving Skies</h3>
-    <p class="set-code">swsh7.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh7.json" download="swsh7.json" aria-label="Download Evolving Skies JSON" data-file-name="swsh7.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Evolving Skies</h3>
+<p class="set-code">swsh7.json</p>
+</div>
+<button aria-label="Download Evolving Skies JSON" class="download-btn main" data-file-name="swsh7.json" data-href="main_tcg/swsh7.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="celebrations  cel25.json">
-  <div class="set-info">
-    <h3>Celebrations</h3>
-    <p class="set-code">cel25.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/cel25.json" download="cel25.json" aria-label="Download Celebrations JSON" data-file-name="cel25.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Celebrations</h3>
+<p class="set-code">cel25.json</p>
+</div>
+<button aria-label="Download Celebrations JSON" class="download-btn main" data-file-name="cel25.json" data-href="main_tcg/cel25.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="fusion strike  swsh8.json">
-  <div class="set-info">
-    <h3>Fusion Strike</h3>
-    <p class="set-code">swsh8.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh8.json" download="swsh8.json" aria-label="Download Fusion Strike JSON" data-file-name="swsh8.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Fusion Strike</h3>
+<p class="set-code">swsh8.json</p>
+</div>
+<button aria-label="Download Fusion Strike JSON" class="download-btn main" data-file-name="swsh8.json" data-href="main_tcg/swsh8.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="brilliant stars  swsh9.json">
-  <div class="set-info">
-    <h3>Brilliant Stars</h3>
-    <p class="set-code">swsh9.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh9.json" download="swsh9.json" aria-label="Download Brilliant Stars JSON" data-file-name="swsh9.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Brilliant Stars</h3>
+<p class="set-code">swsh9.json</p>
+</div>
+<button aria-label="Download Brilliant Stars JSON" class="download-btn main" data-file-name="swsh9.json" data-href="main_tcg/swsh9.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="astral radiance  swsh10.json">
-  <div class="set-info">
-    <h3>Astral Radiance</h3>
-    <p class="set-code">swsh10.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh10.json" download="swsh10.json" aria-label="Download Astral Radiance JSON" data-file-name="swsh10.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Astral Radiance</h3>
+<p class="set-code">swsh10.json</p>
+</div>
+<button aria-label="Download Astral Radiance JSON" class="download-btn main" data-file-name="swsh10.json" data-href="main_tcg/swsh10.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="pokémon go  pgo.json">
-  <div class="set-info">
-    <h3>Pokémon GO</h3>
-    <p class="set-code">pgo.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/pgo.json" download="pgo.json" aria-label="Download Pokémon GO JSON" data-file-name="pgo.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Pokémon GO</h3>
+<p class="set-code">pgo.json</p>
+</div>
+<button aria-label="Download Pokémon GO JSON" class="download-btn main" data-file-name="pgo.json" data-href="main_tcg/pgo.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="lost origin  swsh11.json">
-  <div class="set-info">
-    <h3>Lost Origin</h3>
-    <p class="set-code">swsh11.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh11.json" download="swsh11.json" aria-label="Download Lost Origin JSON" data-file-name="swsh11.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Lost Origin</h3>
+<p class="set-code">swsh11.json</p>
+</div>
+<button aria-label="Download Lost Origin JSON" class="download-btn main" data-file-name="swsh11.json" data-href="main_tcg/swsh11.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="silver tempest  swsh12.json">
-  <div class="set-info">
-    <h3>Silver Tempest</h3>
-    <p class="set-code">swsh12.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh12.json" download="swsh12.json" aria-label="Download Silver Tempest JSON" data-file-name="swsh12.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Silver Tempest</h3>
+<p class="set-code">swsh12.json</p>
+</div>
+<button aria-label="Download Silver Tempest JSON" class="download-btn main" data-file-name="swsh12.json" data-href="main_tcg/swsh12.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="crown zenith  swsh12pt5.json">
-  <div class="set-info">
-    <h3>Crown Zenith</h3>
-    <p class="set-code">swsh12pt5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/swsh12pt5.json" download="swsh12pt5.json" aria-label="Download Crown Zenith JSON" data-file-name="swsh12pt5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Crown Zenith</h3>
+<p class="set-code">swsh12pt5.json</p>
+</div>
+<button aria-label="Download Crown Zenith JSON" class="download-btn main" data-file-name="swsh12pt5.json" data-href="main_tcg/swsh12pt5.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="sun-moon-era">
 <div class="section-heading"><h2>Sun &amp; Moon Era</h2><span>12 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="sun &amp; moon  sm1.json">
-  <div class="set-info">
-    <h3>Sun &amp; Moon</h3>
-    <p class="set-code">sm1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm1.json" download="sm1.json" aria-label="Download Sun &amp; Moon JSON" data-file-name="sm1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Sun &amp; Moon</h3>
+<p class="set-code">sm1.json</p>
+</div>
+<button aria-label="Download Sun &amp; Moon JSON" class="download-btn main" data-file-name="sm1.json" data-href="main_tcg/sm1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="guardians rising  sm2.json">
-  <div class="set-info">
-    <h3>Guardians Rising</h3>
-    <p class="set-code">sm2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm2.json" download="sm2.json" aria-label="Download Guardians Rising JSON" data-file-name="sm2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Guardians Rising</h3>
+<p class="set-code">sm2.json</p>
+</div>
+<button aria-label="Download Guardians Rising JSON" class="download-btn main" data-file-name="sm2.json" data-href="main_tcg/sm2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="burning shadows  sm3.json">
-  <div class="set-info">
-    <h3>Burning Shadows</h3>
-    <p class="set-code">sm3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm3.json" download="sm3.json" aria-label="Download Burning Shadows JSON" data-file-name="sm3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Burning Shadows</h3>
+<p class="set-code">sm3.json</p>
+</div>
+<button aria-label="Download Burning Shadows JSON" class="download-btn main" data-file-name="sm3.json" data-href="main_tcg/sm3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="crimson invasion  sm4.json">
-  <div class="set-info">
-    <h3>Crimson Invasion</h3>
-    <p class="set-code">sm4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm4.json" download="sm4.json" aria-label="Download Crimson Invasion JSON" data-file-name="sm4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Crimson Invasion</h3>
+<p class="set-code">sm4.json</p>
+</div>
+<button aria-label="Download Crimson Invasion JSON" class="download-btn main" data-file-name="sm4.json" data-href="main_tcg/sm4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ultra prism  sm5.json">
-  <div class="set-info">
-    <h3>Ultra Prism</h3>
-    <p class="set-code">sm5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm5.json" download="sm5.json" aria-label="Download Ultra Prism JSON" data-file-name="sm5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Ultra Prism</h3>
+<p class="set-code">sm5.json</p>
+</div>
+<button aria-label="Download Ultra Prism JSON" class="download-btn main" data-file-name="sm5.json" data-href="main_tcg/sm5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="forbidden light  sm6.json">
-  <div class="set-info">
-    <h3>Forbidden Light</h3>
-    <p class="set-code">sm6.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm6.json" download="sm6.json" aria-label="Download Forbidden Light JSON" data-file-name="sm6.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Forbidden Light</h3>
+<p class="set-code">sm6.json</p>
+</div>
+<button aria-label="Download Forbidden Light JSON" class="download-btn main" data-file-name="sm6.json" data-href="main_tcg/sm6.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="celestial storm  sm7.json">
-  <div class="set-info">
-    <h3>Celestial Storm</h3>
-    <p class="set-code">sm7.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm7.json" download="sm7.json" aria-label="Download Celestial Storm JSON" data-file-name="sm7.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Celestial Storm</h3>
+<p class="set-code">sm7.json</p>
+</div>
+<button aria-label="Download Celestial Storm JSON" class="download-btn main" data-file-name="sm7.json" data-href="main_tcg/sm7.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="lost thunder  sm8.json">
-  <div class="set-info">
-    <h3>Lost Thunder</h3>
-    <p class="set-code">sm8.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm8.json" download="sm8.json" aria-label="Download Lost Thunder JSON" data-file-name="sm8.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Lost Thunder</h3>
+<p class="set-code">sm8.json</p>
+</div>
+<button aria-label="Download Lost Thunder JSON" class="download-btn main" data-file-name="sm8.json" data-href="main_tcg/sm8.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="team up  sm9.json">
-  <div class="set-info">
-    <h3>Team Up</h3>
-    <p class="set-code">sm9.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm9.json" download="sm9.json" aria-label="Download Team Up JSON" data-file-name="sm9.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Team Up</h3>
+<p class="set-code">sm9.json</p>
+</div>
+<button aria-label="Download Team Up JSON" class="download-btn main" data-file-name="sm9.json" data-href="main_tcg/sm9.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="unbroken bonds  sm10.json">
-  <div class="set-info">
-    <h3>Unbroken Bonds</h3>
-    <p class="set-code">sm10.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm10.json" download="sm10.json" aria-label="Download Unbroken Bonds JSON" data-file-name="sm10.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Unbroken Bonds</h3>
+<p class="set-code">sm10.json</p>
+</div>
+<button aria-label="Download Unbroken Bonds JSON" class="download-btn main" data-file-name="sm10.json" data-href="main_tcg/sm10.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="unified minds  sm11.json">
-  <div class="set-info">
-    <h3>Unified Minds</h3>
-    <p class="set-code">sm11.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm11.json" download="sm11.json" aria-label="Download Unified Minds JSON" data-file-name="sm11.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Unified Minds</h3>
+<p class="set-code">sm11.json</p>
+</div>
+<button aria-label="Download Unified Minds JSON" class="download-btn main" data-file-name="sm11.json" data-href="main_tcg/sm11.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="cosmic eclipse  sm12.json">
-  <div class="set-info">
-    <h3>Cosmic Eclipse</h3>
-    <p class="set-code">sm12.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/sm12.json" download="sm12.json" aria-label="Download Cosmic Eclipse JSON" data-file-name="sm12.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Cosmic Eclipse</h3>
+<p class="set-code">sm12.json</p>
+</div>
+<button aria-label="Download Cosmic Eclipse JSON" class="download-btn main" data-file-name="sm12.json" data-href="main_tcg/sm12.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="xy-era">
 <div class="section-heading"><h2>XY Era</h2><span>12 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="xy  xy1.json">
-  <div class="set-info">
-    <h3>XY</h3>
-    <p class="set-code">xy1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy1.json" download="xy1.json" aria-label="Download XY JSON" data-file-name="xy1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>XY</h3>
+<p class="set-code">xy1.json</p>
+</div>
+<button aria-label="Download XY JSON" class="download-btn main" data-file-name="xy1.json" data-href="main_tcg/xy1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="flashfire  xy2.json">
-  <div class="set-info">
-    <h3>Flashfire</h3>
-    <p class="set-code">xy2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy2.json" download="xy2.json" aria-label="Download Flashfire JSON" data-file-name="xy2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Flashfire</h3>
+<p class="set-code">xy2.json</p>
+</div>
+<button aria-label="Download Flashfire JSON" class="download-btn main" data-file-name="xy2.json" data-href="main_tcg/xy2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="furious fists  xy3.json">
-  <div class="set-info">
-    <h3>Furious Fists</h3>
-    <p class="set-code">xy3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy3.json" download="xy3.json" aria-label="Download Furious Fists JSON" data-file-name="xy3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Furious Fists</h3>
+<p class="set-code">xy3.json</p>
+</div>
+<button aria-label="Download Furious Fists JSON" class="download-btn main" data-file-name="xy3.json" data-href="main_tcg/xy3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="phantom forces  xy4.json">
-  <div class="set-info">
-    <h3>Phantom Forces</h3>
-    <p class="set-code">xy4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy4.json" download="xy4.json" aria-label="Download Phantom Forces JSON" data-file-name="xy4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Phantom Forces</h3>
+<p class="set-code">xy4.json</p>
+</div>
+<button aria-label="Download Phantom Forces JSON" class="download-btn main" data-file-name="xy4.json" data-href="main_tcg/xy4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="primal clash  xy5.json">
-  <div class="set-info">
-    <h3>Primal Clash</h3>
-    <p class="set-code">xy5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy5.json" download="xy5.json" aria-label="Download Primal Clash JSON" data-file-name="xy5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Primal Clash</h3>
+<p class="set-code">xy5.json</p>
+</div>
+<button aria-label="Download Primal Clash JSON" class="download-btn main" data-file-name="xy5.json" data-href="main_tcg/xy5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="roaring skies  xy6.json">
-  <div class="set-info">
-    <h3>Roaring Skies</h3>
-    <p class="set-code">xy6.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy6.json" download="xy6.json" aria-label="Download Roaring Skies JSON" data-file-name="xy6.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Roaring Skies</h3>
+<p class="set-code">xy6.json</p>
+</div>
+<button aria-label="Download Roaring Skies JSON" class="download-btn main" data-file-name="xy6.json" data-href="main_tcg/xy6.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ancient origins  xy7.json">
-  <div class="set-info">
-    <h3>Ancient Origins</h3>
-    <p class="set-code">xy7.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy7.json" download="xy7.json" aria-label="Download Ancient Origins JSON" data-file-name="xy7.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Ancient Origins</h3>
+<p class="set-code">xy7.json</p>
+</div>
+<button aria-label="Download Ancient Origins JSON" class="download-btn main" data-file-name="xy7.json" data-href="main_tcg/xy7.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="breakthrough  xy8.json">
-  <div class="set-info">
-    <h3>BREAKthrough</h3>
-    <p class="set-code">xy8.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy8.json" download="xy8.json" aria-label="Download BREAKthrough JSON" data-file-name="xy8.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>BREAKthrough</h3>
+<p class="set-code">xy8.json</p>
+</div>
+<button aria-label="Download BREAKthrough JSON" class="download-btn main" data-file-name="xy8.json" data-href="main_tcg/xy8.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="breakpoint  xy9.json">
-  <div class="set-info">
-    <h3>BREAKpoint</h3>
-    <p class="set-code">xy9.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy9.json" download="xy9.json" aria-label="Download BREAKpoint JSON" data-file-name="xy9.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>BREAKpoint</h3>
+<p class="set-code">xy9.json</p>
+</div>
+<button aria-label="Download BREAKpoint JSON" class="download-btn main" data-file-name="xy9.json" data-href="main_tcg/xy9.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="fates collide  xy10.json">
-  <div class="set-info">
-    <h3>Fates Collide</h3>
-    <p class="set-code">xy10.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy10.json" download="xy10.json" aria-label="Download Fates Collide JSON" data-file-name="xy10.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Fates Collide</h3>
+<p class="set-code">xy10.json</p>
+</div>
+<button aria-label="Download Fates Collide JSON" class="download-btn main" data-file-name="xy10.json" data-href="main_tcg/xy10.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="steam siege  xy11.json">
-  <div class="set-info">
-    <h3>Steam Siege</h3>
-    <p class="set-code">xy11.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy11.json" download="xy11.json" aria-label="Download Steam Siege JSON" data-file-name="xy11.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Steam Siege</h3>
+<p class="set-code">xy11.json</p>
+</div>
+<button aria-label="Download Steam Siege JSON" class="download-btn main" data-file-name="xy11.json" data-href="main_tcg/xy11.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="evolutions  xy12.json">
-  <div class="set-info">
-    <h3>Evolutions</h3>
-    <p class="set-code">xy12.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/xy12.json" download="xy12.json" aria-label="Download Evolutions JSON" data-file-name="xy12.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Evolutions</h3>
+<p class="set-code">xy12.json</p>
+</div>
+<button aria-label="Download Evolutions JSON" class="download-btn main" data-file-name="xy12.json" data-href="main_tcg/xy12.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="black-white-era">
 <div class="section-heading"><h2>Black &amp; White Era</h2><span>11 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="black &amp; white  bw1.json">
-  <div class="set-info">
-    <h3>Black &amp; White</h3>
-    <p class="set-code">bw1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw1.json" download="bw1.json" aria-label="Download Black &amp; White JSON" data-file-name="bw1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Black &amp; White</h3>
+<p class="set-code">bw1.json</p>
+</div>
+<button aria-label="Download Black &amp; White JSON" class="download-btn main" data-file-name="bw1.json" data-href="main_tcg/bw1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="emerging powers  bw2.json">
-  <div class="set-info">
-    <h3>Emerging Powers</h3>
-    <p class="set-code">bw2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw2.json" download="bw2.json" aria-label="Download Emerging Powers JSON" data-file-name="bw2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Emerging Powers</h3>
+<p class="set-code">bw2.json</p>
+</div>
+<button aria-label="Download Emerging Powers JSON" class="download-btn main" data-file-name="bw2.json" data-href="main_tcg/bw2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="noble victories  bw3.json">
-  <div class="set-info">
-    <h3>Noble Victories</h3>
-    <p class="set-code">bw3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw3.json" download="bw3.json" aria-label="Download Noble Victories JSON" data-file-name="bw3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Noble Victories</h3>
+<p class="set-code">bw3.json</p>
+</div>
+<button aria-label="Download Noble Victories JSON" class="download-btn main" data-file-name="bw3.json" data-href="main_tcg/bw3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="next destinies  bw4.json">
-  <div class="set-info">
-    <h3>Next Destinies</h3>
-    <p class="set-code">bw4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw4.json" download="bw4.json" aria-label="Download Next Destinies JSON" data-file-name="bw4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Next Destinies</h3>
+<p class="set-code">bw4.json</p>
+</div>
+<button aria-label="Download Next Destinies JSON" class="download-btn main" data-file-name="bw4.json" data-href="main_tcg/bw4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="dark explorers  bw5.json">
-  <div class="set-info">
-    <h3>Dark Explorers</h3>
-    <p class="set-code">bw5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw5.json" download="bw5.json" aria-label="Download Dark Explorers JSON" data-file-name="bw5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Dark Explorers</h3>
+<p class="set-code">bw5.json</p>
+</div>
+<button aria-label="Download Dark Explorers JSON" class="download-btn main" data-file-name="bw5.json" data-href="main_tcg/bw5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="dragons exalted  bw6.json">
-  <div class="set-info">
-    <h3>Dragons Exalted</h3>
-    <p class="set-code">bw6.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw6.json" download="bw6.json" aria-label="Download Dragons Exalted JSON" data-file-name="bw6.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Dragons Exalted</h3>
+<p class="set-code">bw6.json</p>
+</div>
+<button aria-label="Download Dragons Exalted JSON" class="download-btn main" data-file-name="bw6.json" data-href="main_tcg/bw6.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="boundaries crossed  bw7.json">
-  <div class="set-info">
-    <h3>Boundaries Crossed</h3>
-    <p class="set-code">bw7.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw7.json" download="bw7.json" aria-label="Download Boundaries Crossed JSON" data-file-name="bw7.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Boundaries Crossed</h3>
+<p class="set-code">bw7.json</p>
+</div>
+<button aria-label="Download Boundaries Crossed JSON" class="download-btn main" data-file-name="bw7.json" data-href="main_tcg/bw7.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="plasma storm  bw8.json">
-  <div class="set-info">
-    <h3>Plasma Storm</h3>
-    <p class="set-code">bw8.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw8.json" download="bw8.json" aria-label="Download Plasma Storm JSON" data-file-name="bw8.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Plasma Storm</h3>
+<p class="set-code">bw8.json</p>
+</div>
+<button aria-label="Download Plasma Storm JSON" class="download-btn main" data-file-name="bw8.json" data-href="main_tcg/bw8.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="plasma freeze  bw9.json">
-  <div class="set-info">
-    <h3>Plasma Freeze</h3>
-    <p class="set-code">bw9.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw9.json" download="bw9.json" aria-label="Download Plasma Freeze JSON" data-file-name="bw9.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Plasma Freeze</h3>
+<p class="set-code">bw9.json</p>
+</div>
+<button aria-label="Download Plasma Freeze JSON" class="download-btn main" data-file-name="bw9.json" data-href="main_tcg/bw9.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="plasma blast  bw10.json">
-  <div class="set-info">
-    <h3>Plasma Blast</h3>
-    <p class="set-code">bw10.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw10.json" download="bw10.json" aria-label="Download Plasma Blast JSON" data-file-name="bw10.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Plasma Blast</h3>
+<p class="set-code">bw10.json</p>
+</div>
+<button aria-label="Download Plasma Blast JSON" class="download-btn main" data-file-name="bw10.json" data-href="main_tcg/bw10.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="legendary treasures  bw11.json">
-  <div class="set-info">
-    <h3>Legendary Treasures</h3>
-    <p class="set-code">bw11.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/bw11.json" download="bw11.json" aria-label="Download Legendary Treasures JSON" data-file-name="bw11.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Legendary Treasures</h3>
+<p class="set-code">bw11.json</p>
+</div>
+<button aria-label="Download Legendary Treasures JSON" class="download-btn main" data-file-name="bw11.json" data-href="main_tcg/bw11.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="heartgold-soulsilver-era">
 <div class="section-heading"><h2>HeartGold &amp; SoulSilver Era</h2><span>5 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="heartgold &amp; soulsilver  hgss1.json">
-  <div class="set-info">
-    <h3>HeartGold &amp; SoulSilver</h3>
-    <p class="set-code">hgss1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/hgss1.json" download="hgss1.json" aria-label="Download HeartGold &amp; SoulSilver JSON" data-file-name="hgss1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>HeartGold &amp; SoulSilver</h3>
+<p class="set-code">hgss1.json</p>
+</div>
+<button aria-label="Download HeartGold &amp; SoulSilver JSON" class="download-btn main" data-file-name="hgss1.json" data-href="main_tcg/hgss1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="unleashed  hgss2.json">
-  <div class="set-info">
-    <h3>Unleashed</h3>
-    <p class="set-code">hgss2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/hgss2.json" download="hgss2.json" aria-label="Download Unleashed JSON" data-file-name="hgss2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Unleashed</h3>
+<p class="set-code">hgss2.json</p>
+</div>
+<button aria-label="Download Unleashed JSON" class="download-btn main" data-file-name="hgss2.json" data-href="main_tcg/hgss2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="undaunted  hgss3.json">
-  <div class="set-info">
-    <h3>Undaunted</h3>
-    <p class="set-code">hgss3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/hgss3.json" download="hgss3.json" aria-label="Download Undaunted JSON" data-file-name="hgss3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Undaunted</h3>
+<p class="set-code">hgss3.json</p>
+</div>
+<button aria-label="Download Undaunted JSON" class="download-btn main" data-file-name="hgss3.json" data-href="main_tcg/hgss3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="triumphant  hgss4.json">
-  <div class="set-info">
-    <h3>Triumphant</h3>
-    <p class="set-code">hgss4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/hgss4.json" download="hgss4.json" aria-label="Download Triumphant JSON" data-file-name="hgss4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Triumphant</h3>
+<p class="set-code">hgss4.json</p>
+</div>
+<button aria-label="Download Triumphant JSON" class="download-btn main" data-file-name="hgss4.json" data-href="main_tcg/hgss4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="call of legends  col1.json">
-  <div class="set-info">
-    <h3>Call of Legends</h3>
-    <p class="set-code">col1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/col1.json" download="col1.json" aria-label="Download Call of Legends JSON" data-file-name="col1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Call of Legends</h3>
+<p class="set-code">col1.json</p>
+</div>
+<button aria-label="Download Call of Legends JSON" class="download-btn main" data-file-name="col1.json" data-href="main_tcg/col1.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="diamond-pearl-platinum-era">
 <div class="section-heading"><h2>Diamond &amp; Pearl / Platinum Era</h2><span>11 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="diamond &amp; pearl  dp1.json">
-  <div class="set-info">
-    <h3>Diamond &amp; Pearl</h3>
-    <p class="set-code">dp1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/dp1.json" download="dp1.json" aria-label="Download Diamond &amp; Pearl JSON" data-file-name="dp1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Diamond &amp; Pearl</h3>
+<p class="set-code">dp1.json</p>
+</div>
+<button aria-label="Download Diamond &amp; Pearl JSON" class="download-btn main" data-file-name="dp1.json" data-href="main_tcg/dp1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="mysterious treasures  dp2.json">
-  <div class="set-info">
-    <h3>Mysterious Treasures</h3>
-    <p class="set-code">dp2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/dp2.json" download="dp2.json" aria-label="Download Mysterious Treasures JSON" data-file-name="dp2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Mysterious Treasures</h3>
+<p class="set-code">dp2.json</p>
+</div>
+<button aria-label="Download Mysterious Treasures JSON" class="download-btn main" data-file-name="dp2.json" data-href="main_tcg/dp2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="secret wonders  dp3.json">
-  <div class="set-info">
-    <h3>Secret Wonders</h3>
-    <p class="set-code">dp3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/dp3.json" download="dp3.json" aria-label="Download Secret Wonders JSON" data-file-name="dp3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Secret Wonders</h3>
+<p class="set-code">dp3.json</p>
+</div>
+<button aria-label="Download Secret Wonders JSON" class="download-btn main" data-file-name="dp3.json" data-href="main_tcg/dp3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="great encounters  dp4.json">
-  <div class="set-info">
-    <h3>Great Encounters</h3>
-    <p class="set-code">dp4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/dp4.json" download="dp4.json" aria-label="Download Great Encounters JSON" data-file-name="dp4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Great Encounters</h3>
+<p class="set-code">dp4.json</p>
+</div>
+<button aria-label="Download Great Encounters JSON" class="download-btn main" data-file-name="dp4.json" data-href="main_tcg/dp4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="majestic dawn  dp5.json">
-  <div class="set-info">
-    <h3>Majestic Dawn</h3>
-    <p class="set-code">dp5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/dp5.json" download="dp5.json" aria-label="Download Majestic Dawn JSON" data-file-name="dp5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Majestic Dawn</h3>
+<p class="set-code">dp5.json</p>
+</div>
+<button aria-label="Download Majestic Dawn JSON" class="download-btn main" data-file-name="dp5.json" data-href="main_tcg/dp5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="legends awakened  dp6.json">
-  <div class="set-info">
-    <h3>Legends Awakened</h3>
-    <p class="set-code">dp6.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/dp6.json" download="dp6.json" aria-label="Download Legends Awakened JSON" data-file-name="dp6.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Legends Awakened</h3>
+<p class="set-code">dp6.json</p>
+</div>
+<button aria-label="Download Legends Awakened JSON" class="download-btn main" data-file-name="dp6.json" data-href="main_tcg/dp6.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="stormfront  dp7.json">
-  <div class="set-info">
-    <h3>Stormfront</h3>
-    <p class="set-code">dp7.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/dp7.json" download="dp7.json" aria-label="Download Stormfront JSON" data-file-name="dp7.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Stormfront</h3>
+<p class="set-code">dp7.json</p>
+</div>
+<button aria-label="Download Stormfront JSON" class="download-btn main" data-file-name="dp7.json" data-href="main_tcg/dp7.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="platinum  pl1.json">
-  <div class="set-info">
-    <h3>Platinum</h3>
-    <p class="set-code">pl1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/pl1.json" download="pl1.json" aria-label="Download Platinum JSON" data-file-name="pl1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Platinum</h3>
+<p class="set-code">pl1.json</p>
+</div>
+<button aria-label="Download Platinum JSON" class="download-btn main" data-file-name="pl1.json" data-href="main_tcg/pl1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="rising rivals  pl2.json">
-  <div class="set-info">
-    <h3>Rising Rivals</h3>
-    <p class="set-code">pl2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/pl2.json" download="pl2.json" aria-label="Download Rising Rivals JSON" data-file-name="pl2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Rising Rivals</h3>
+<p class="set-code">pl2.json</p>
+</div>
+<button aria-label="Download Rising Rivals JSON" class="download-btn main" data-file-name="pl2.json" data-href="main_tcg/pl2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="supreme victors  pl3.json">
-  <div class="set-info">
-    <h3>Supreme Victors</h3>
-    <p class="set-code">pl3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/pl3.json" download="pl3.json" aria-label="Download Supreme Victors JSON" data-file-name="pl3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Supreme Victors</h3>
+<p class="set-code">pl3.json</p>
+</div>
+<button aria-label="Download Supreme Victors JSON" class="download-btn main" data-file-name="pl3.json" data-href="main_tcg/pl3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="arceus  pl4.json">
-  <div class="set-info">
-    <h3>Arceus</h3>
-    <p class="set-code">pl4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/pl4.json" download="pl4.json" aria-label="Download Arceus JSON" data-file-name="pl4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Arceus</h3>
+<p class="set-code">pl4.json</p>
+</div>
+<button aria-label="Download Arceus JSON" class="download-btn main" data-file-name="pl4.json" data-href="main_tcg/pl4.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="ex-era">
 <div class="section-heading"><h2>EX Era</h2><span>16 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="ex ruby &amp; sapphire  ex1.json">
-  <div class="set-info">
-    <h3>EX Ruby &amp; Sapphire</h3>
-    <p class="set-code">ex1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex1.json" download="ex1.json" aria-label="Download EX Ruby &amp; Sapphire JSON" data-file-name="ex1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Ruby &amp; Sapphire</h3>
+<p class="set-code">ex1.json</p>
+</div>
+<button aria-label="Download EX Ruby &amp; Sapphire JSON" class="download-btn main" data-file-name="ex1.json" data-href="main_tcg/ex1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex sandstorm  ex2.json">
-  <div class="set-info">
-    <h3>EX Sandstorm</h3>
-    <p class="set-code">ex2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex2.json" download="ex2.json" aria-label="Download EX Sandstorm JSON" data-file-name="ex2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Sandstorm</h3>
+<p class="set-code">ex2.json</p>
+</div>
+<button aria-label="Download EX Sandstorm JSON" class="download-btn main" data-file-name="ex2.json" data-href="main_tcg/ex2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex dragon  ex3.json">
-  <div class="set-info">
-    <h3>EX Dragon</h3>
-    <p class="set-code">ex3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex3.json" download="ex3.json" aria-label="Download EX Dragon JSON" data-file-name="ex3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Dragon</h3>
+<p class="set-code">ex3.json</p>
+</div>
+<button aria-label="Download EX Dragon JSON" class="download-btn main" data-file-name="ex3.json" data-href="main_tcg/ex3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex team magma vs team aqua  ex4.json">
-  <div class="set-info">
-    <h3>EX Team Magma vs Team Aqua</h3>
-    <p class="set-code">ex4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex4.json" download="ex4.json" aria-label="Download EX Team Magma vs Team Aqua JSON" data-file-name="ex4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Team Magma vs Team Aqua</h3>
+<p class="set-code">ex4.json</p>
+</div>
+<button aria-label="Download EX Team Magma vs Team Aqua JSON" class="download-btn main" data-file-name="ex4.json" data-href="main_tcg/ex4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex hidden legends  ex5.json">
-  <div class="set-info">
-    <h3>EX Hidden Legends</h3>
-    <p class="set-code">ex5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex5.json" download="ex5.json" aria-label="Download EX Hidden Legends JSON" data-file-name="ex5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Hidden Legends</h3>
+<p class="set-code">ex5.json</p>
+</div>
+<button aria-label="Download EX Hidden Legends JSON" class="download-btn main" data-file-name="ex5.json" data-href="main_tcg/ex5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex firered &amp; leafgreen  ex6.json">
-  <div class="set-info">
-    <h3>EX FireRed &amp; LeafGreen</h3>
-    <p class="set-code">ex6.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex6.json" download="ex6.json" aria-label="Download EX FireRed &amp; LeafGreen JSON" data-file-name="ex6.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX FireRed &amp; LeafGreen</h3>
+<p class="set-code">ex6.json</p>
+</div>
+<button aria-label="Download EX FireRed &amp; LeafGreen JSON" class="download-btn main" data-file-name="ex6.json" data-href="main_tcg/ex6.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex team rocket returns  ex7.json">
-  <div class="set-info">
-    <h3>EX Team Rocket Returns</h3>
-    <p class="set-code">ex7.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex7.json" download="ex7.json" aria-label="Download EX Team Rocket Returns JSON" data-file-name="ex7.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Team Rocket Returns</h3>
+<p class="set-code">ex7.json</p>
+</div>
+<button aria-label="Download EX Team Rocket Returns JSON" class="download-btn main" data-file-name="ex7.json" data-href="main_tcg/ex7.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex deoxys  ex8.json">
-  <div class="set-info">
-    <h3>EX Deoxys</h3>
-    <p class="set-code">ex8.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex8.json" download="ex8.json" aria-label="Download EX Deoxys JSON" data-file-name="ex8.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Deoxys</h3>
+<p class="set-code">ex8.json</p>
+</div>
+<button aria-label="Download EX Deoxys JSON" class="download-btn main" data-file-name="ex8.json" data-href="main_tcg/ex8.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex emerald  ex9.json">
-  <div class="set-info">
-    <h3>EX Emerald</h3>
-    <p class="set-code">ex9.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex9.json" download="ex9.json" aria-label="Download EX Emerald JSON" data-file-name="ex9.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Emerald</h3>
+<p class="set-code">ex9.json</p>
+</div>
+<button aria-label="Download EX Emerald JSON" class="download-btn main" data-file-name="ex9.json" data-href="main_tcg/ex9.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex unseen forces  ex10.json">
-  <div class="set-info">
-    <h3>EX Unseen Forces</h3>
-    <p class="set-code">ex10.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex10.json" download="ex10.json" aria-label="Download EX Unseen Forces JSON" data-file-name="ex10.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Unseen Forces</h3>
+<p class="set-code">ex10.json</p>
+</div>
+<button aria-label="Download EX Unseen Forces JSON" class="download-btn main" data-file-name="ex10.json" data-href="main_tcg/ex10.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex delta species  ex11.json">
-  <div class="set-info">
-    <h3>EX Delta Species</h3>
-    <p class="set-code">ex11.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex11.json" download="ex11.json" aria-label="Download EX Delta Species JSON" data-file-name="ex11.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Delta Species</h3>
+<p class="set-code">ex11.json</p>
+</div>
+<button aria-label="Download EX Delta Species JSON" class="download-btn main" data-file-name="ex11.json" data-href="main_tcg/ex11.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex legend maker  ex12.json">
-  <div class="set-info">
-    <h3>EX Legend Maker</h3>
-    <p class="set-code">ex12.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex12.json" download="ex12.json" aria-label="Download EX Legend Maker JSON" data-file-name="ex12.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Legend Maker</h3>
+<p class="set-code">ex12.json</p>
+</div>
+<button aria-label="Download EX Legend Maker JSON" class="download-btn main" data-file-name="ex12.json" data-href="main_tcg/ex12.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex holon phantoms  ex13.json">
-  <div class="set-info">
-    <h3>EX Holon Phantoms</h3>
-    <p class="set-code">ex13.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex13.json" download="ex13.json" aria-label="Download EX Holon Phantoms JSON" data-file-name="ex13.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Holon Phantoms</h3>
+<p class="set-code">ex13.json</p>
+</div>
+<button aria-label="Download EX Holon Phantoms JSON" class="download-btn main" data-file-name="ex13.json" data-href="main_tcg/ex13.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex crystal guardians  ex14.json">
-  <div class="set-info">
-    <h3>EX Crystal Guardians</h3>
-    <p class="set-code">ex14.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex14.json" download="ex14.json" aria-label="Download EX Crystal Guardians JSON" data-file-name="ex14.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Crystal Guardians</h3>
+<p class="set-code">ex14.json</p>
+</div>
+<button aria-label="Download EX Crystal Guardians JSON" class="download-btn main" data-file-name="ex14.json" data-href="main_tcg/ex14.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex dragon frontiers  ex15.json">
-  <div class="set-info">
-    <h3>EX Dragon Frontiers</h3>
-    <p class="set-code">ex15.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex15.json" download="ex15.json" aria-label="Download EX Dragon Frontiers JSON" data-file-name="ex15.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Dragon Frontiers</h3>
+<p class="set-code">ex15.json</p>
+</div>
+<button aria-label="Download EX Dragon Frontiers JSON" class="download-btn main" data-file-name="ex15.json" data-href="main_tcg/ex15.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="ex power keepers  ex16.json">
-  <div class="set-info">
-    <h3>EX Power Keepers</h3>
-    <p class="set-code">ex16.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ex16.json" download="ex16.json" aria-label="Download EX Power Keepers JSON" data-file-name="ex16.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>EX Power Keepers</h3>
+<p class="set-code">ex16.json</p>
+</div>
+<button aria-label="Download EX Power Keepers JSON" class="download-btn main" data-file-name="ex16.json" data-href="main_tcg/ex16.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section main-section" id="classic-era">
 <div class="section-heading"><h2>Classic Era</h2><span>14 downloads</span></div>
 <div class="set-grid">
 <article class="set-card main" data-search="base set  base1.json">
-  <div class="set-info">
-    <h3>Base Set</h3>
-    <p class="set-code">base1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/base1.json" download="base1.json" aria-label="Download Base Set JSON" data-file-name="base1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Base Set</h3>
+<p class="set-code">base1.json</p>
+</div>
+<button aria-label="Download Base Set JSON" class="download-btn main" data-file-name="base1.json" data-href="main_tcg/base1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="jungle  base2.json">
-  <div class="set-info">
-    <h3>Jungle</h3>
-    <p class="set-code">base2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/base2.json" download="base2.json" aria-label="Download Jungle JSON" data-file-name="base2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Jungle</h3>
+<p class="set-code">base2.json</p>
+</div>
+<button aria-label="Download Jungle JSON" class="download-btn main" data-file-name="base2.json" data-href="main_tcg/base2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="fossil  base3.json">
-  <div class="set-info">
-    <h3>Fossil</h3>
-    <p class="set-code">base3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/base3.json" download="base3.json" aria-label="Download Fossil JSON" data-file-name="base3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Fossil</h3>
+<p class="set-code">base3.json</p>
+</div>
+<button aria-label="Download Fossil JSON" class="download-btn main" data-file-name="base3.json" data-href="main_tcg/base3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="team rocket  base5.json">
-  <div class="set-info">
-    <h3>Team Rocket</h3>
-    <p class="set-code">base5.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/base5.json" download="base5.json" aria-label="Download Team Rocket JSON" data-file-name="base5.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Team Rocket</h3>
+<p class="set-code">base5.json</p>
+</div>
+<button aria-label="Download Team Rocket JSON" class="download-btn main" data-file-name="base5.json" data-href="main_tcg/base5.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="gym heroes  gym1.json">
-  <div class="set-info">
-    <h3>Gym Heroes</h3>
-    <p class="set-code">gym1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/gym1.json" download="gym1.json" aria-label="Download Gym Heroes JSON" data-file-name="gym1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Gym Heroes</h3>
+<p class="set-code">gym1.json</p>
+</div>
+<button aria-label="Download Gym Heroes JSON" class="download-btn main" data-file-name="gym1.json" data-href="main_tcg/gym1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="gym challenge  gym2.json">
-  <div class="set-info">
-    <h3>Gym Challenge</h3>
-    <p class="set-code">gym2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/gym2.json" download="gym2.json" aria-label="Download Gym Challenge JSON" data-file-name="gym2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Gym Challenge</h3>
+<p class="set-code">gym2.json</p>
+</div>
+<button aria-label="Download Gym Challenge JSON" class="download-btn main" data-file-name="gym2.json" data-href="main_tcg/gym2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="neo genesis  neo1.json">
-  <div class="set-info">
-    <h3>Neo Genesis</h3>
-    <p class="set-code">neo1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/neo1.json" download="neo1.json" aria-label="Download Neo Genesis JSON" data-file-name="neo1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Neo Genesis</h3>
+<p class="set-code">neo1.json</p>
+</div>
+<button aria-label="Download Neo Genesis JSON" class="download-btn main" data-file-name="neo1.json" data-href="main_tcg/neo1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="neo discovery  neo2.json">
-  <div class="set-info">
-    <h3>Neo Discovery</h3>
-    <p class="set-code">neo2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/neo2.json" download="neo2.json" aria-label="Download Neo Discovery JSON" data-file-name="neo2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Neo Discovery</h3>
+<p class="set-code">neo2.json</p>
+</div>
+<button aria-label="Download Neo Discovery JSON" class="download-btn main" data-file-name="neo2.json" data-href="main_tcg/neo2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="neo revelation  neo3.json">
-  <div class="set-info">
-    <h3>Neo Revelation</h3>
-    <p class="set-code">neo3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/neo3.json" download="neo3.json" aria-label="Download Neo Revelation JSON" data-file-name="neo3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Neo Revelation</h3>
+<p class="set-code">neo3.json</p>
+</div>
+<button aria-label="Download Neo Revelation JSON" class="download-btn main" data-file-name="neo3.json" data-href="main_tcg/neo3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="neo destiny  neo4.json">
-  <div class="set-info">
-    <h3>Neo Destiny</h3>
-    <p class="set-code">neo4.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/neo4.json" download="neo4.json" aria-label="Download Neo Destiny JSON" data-file-name="neo4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Neo Destiny</h3>
+<p class="set-code">neo4.json</p>
+</div>
+<button aria-label="Download Neo Destiny JSON" class="download-btn main" data-file-name="neo4.json" data-href="main_tcg/neo4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="legendary collection  base6.json">
-  <div class="set-info">
-    <h3>Legendary Collection</h3>
-    <p class="set-code">base6.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/base6.json" download="base6.json" aria-label="Download Legendary Collection JSON" data-file-name="base6.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Legendary Collection</h3>
+<p class="set-code">base6.json</p>
+</div>
+<button aria-label="Download Legendary Collection JSON" class="download-btn main" data-file-name="base6.json" data-href="main_tcg/base6.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="expedition base set  ecard1.json">
-  <div class="set-info">
-    <h3>Expedition Base Set</h3>
-    <p class="set-code">ecard1.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ecard1.json" download="ecard1.json" aria-label="Download Expedition Base Set JSON" data-file-name="ecard1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Expedition Base Set</h3>
+<p class="set-code">ecard1.json</p>
+</div>
+<button aria-label="Download Expedition Base Set JSON" class="download-btn main" data-file-name="ecard1.json" data-href="main_tcg/ecard1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="aquapolis  ecard2.json">
-  <div class="set-info">
-    <h3>Aquapolis</h3>
-    <p class="set-code">ecard2.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ecard2.json" download="ecard2.json" aria-label="Download Aquapolis JSON" data-file-name="ecard2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Aquapolis</h3>
+<p class="set-code">ecard2.json</p>
+</div>
+<button aria-label="Download Aquapolis JSON" class="download-btn main" data-file-name="ecard2.json" data-href="main_tcg/ecard2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card main" data-search="skyridge  ecard3.json">
-  <div class="set-info">
-    <h3>Skyridge</h3>
-    <p class="set-code">ecard3.json</p>
-  </div>
-  <a class="download-btn main" href="main_tcg/ecard3.json" download="ecard3.json" aria-label="Download Skyridge JSON" data-file-name="ecard3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Skyridge</h3>
+<p class="set-code">ecard3.json</p>
+</div>
+<button aria-label="Download Skyridge JSON" class="download-btn main" data-file-name="ecard3.json" data-href="main_tcg/ecard3.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <h1 class="major" id="pok-mon-tcg-pocket-sets">Pokémon TCG Pocket Sets</h1>
@@ -1169,198 +1172,193 @@
 <div class="section-heading"><h2>Download All Pokémon TCG Pocket Cards</h2><span>1 download</span></div>
 <div class="set-grid">
 <article class="set-card pocket" data-search="all pokémon tcg pocket cards  all_pocket_tcg_cards.json">
-  <div class="set-info">
-    <h3>All Pokémon TCG Pocket Cards</h3>
-    <p class="set-code">all_pocket_tcg_cards.json</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/all_pocket_tcg_cards.json" download="all_pocket_tcg_cards.json" aria-label="Download All Pokémon TCG Pocket Cards JSON" data-file-name="all_pocket_tcg_cards.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>All Pokémon TCG Pocket Cards</h3>
+<p class="set-code">all_pocket_tcg_cards.json</p>
+</div>
+<button aria-label="Download All Pokémon TCG Pocket Cards JSON" class="download-btn pocket" data-file-name="all_pocket_tcg_cards.json" data-href="pocket_tcg/all_pocket_tcg_cards.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section pocket-section" id="pok-mon-tcg-pocket-series-b">
 <div class="section-heading"><h2>Pokémon TCG Pocket: Series B</h2><span>9 downloads</span></div>
 <div class="set-grid">
 <article class="set-card pocket" data-search="mega rising b1 b1.json">
-  <div class="set-info">
-    <h3>Mega Rising</h3>
-    <p class="set-code">B1</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/B1.json" download="B1.json" aria-label="Download Mega Rising JSON" data-file-name="B1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Mega Rising</h3>
+<p class="set-code">B1</p>
+</div>
+<button aria-label="Download Mega Rising JSON" class="download-btn pocket" data-file-name="B1.json" data-href="pocket_tcg/B1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="crimson blaze b1a b1a.json">
-  <div class="set-info">
-    <h3>Crimson Blaze</h3>
-    <p class="set-code">B1a</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/B1a.json" download="B1a.json" aria-label="Download Crimson Blaze JSON" data-file-name="B1a.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Crimson Blaze</h3>
+<p class="set-code">B1a</p>
+</div>
+<button aria-label="Download Crimson Blaze JSON" class="download-btn pocket" data-file-name="B1a.json" data-href="pocket_tcg/B1a.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="fantastical parade b2 b2.json">
-  <div class="set-info">
-    <h3>Fantastical Parade</h3>
-    <p class="set-code">B2</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/B2.json" download="B2.json" aria-label="Download Fantastical Parade JSON" data-file-name="B2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Fantastical Parade</h3>
+<p class="set-code">B2</p>
+</div>
+<button aria-label="Download Fantastical Parade JSON" class="download-btn pocket" data-file-name="B2.json" data-href="pocket_tcg/B2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="paldean wonders b2a b2a.json">
-  <div class="set-info">
-    <h3>Paldean Wonders</h3>
-    <p class="set-code">B2a</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/B2a.json" download="B2a.json" aria-label="Download Paldean Wonders JSON" data-file-name="B2a.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Paldean Wonders</h3>
+<p class="set-code">B2a</p>
+</div>
+<button aria-label="Download Paldean Wonders JSON" class="download-btn pocket" data-file-name="B2a.json" data-href="pocket_tcg/B2a.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="mega shine b2b b2b.json">
-  <div class="set-info">
-    <h3>Mega Shine</h3>
-    <p class="set-code">B2b</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/B2b.json" download="B2b.json" aria-label="Download Mega Shine JSON" data-file-name="B2b.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Mega Shine</h3>
+<p class="set-code">B2b</p>
+</div>
+<button aria-label="Download Mega Shine JSON" class="download-btn pocket" data-file-name="B2b.json" data-href="pocket_tcg/B2b.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="pulsing aura b3 b3.json">
-  <div class="set-info">
-    <h3>Pulsing Aura</h3>
-    <p class="set-code">B3</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/B3.json" download="B3.json" aria-label="Download Pulsing Aura JSON" data-file-name="B3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Pulsing Aura</h3>
+<p class="set-code">B3</p>
+</div>
+<button aria-label="Download Pulsing Aura JSON" class="download-btn pocket" data-file-name="B3.json" data-href="pocket_tcg/B3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="paradox drive b3a b3a.json">
-  <div class="set-info">
-    <h3>Paradox Drive</h3>
-    <p class="set-code">B3a</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/B3a.json" download="B3a.json" aria-label="Download Paradox Drive JSON" data-file-name="B3a.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Paradox Drive</h3>
+<p class="set-code">B3a</p>
+</div>
+<button aria-label="Download Paradox Drive JSON" class="download-btn pocket" data-file-name="B3a.json" data-href="pocket_tcg/B3a.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="everyday wonders b3b b3b.json">
-  <div class="set-info">
-    <h3>Everyday Wonders</h3>
-    <p class="set-code">B3b</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/B3b.json" download="B3b.json" aria-label="Download Everyday Wonders JSON" data-file-name="B3b.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Everyday Wonders</h3>
+<p class="set-code">B3b</p>
+</div>
+<button aria-label="Download Everyday Wonders JSON" class="download-btn pocket" data-file-name="B3b.json" data-href="pocket_tcg/B3b.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="promo b promo-b promo-b.json">
-  <div class="set-info">
-    <h3>Promo B</h3>
-    <p class="set-code">PROMO-B</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/PROMO-B.json" download="PROMO-B.json" aria-label="Download Promo B JSON" data-file-name="PROMO-B.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Promo B</h3>
+<p class="set-code">PROMO-B</p>
+</div>
+<button aria-label="Download Promo B JSON" class="download-btn pocket" data-file-name="PROMO-B.json" data-href="pocket_tcg/PROMO-B.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
 <section class="set-section pocket-section" id="pok-mon-tcg-pocket-series-a">
 <div class="section-heading"><h2>Pokémon TCG Pocket: Series A</h2><span>12 downloads</span></div>
 <div class="set-grid">
 <article class="set-card pocket" data-search="genetic apex a1 a1.json">
-  <div class="set-info">
-    <h3>Genetic Apex</h3>
-    <p class="set-code">A1</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A1.json" download="A1.json" aria-label="Download Genetic Apex JSON" data-file-name="A1.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Genetic Apex</h3>
+<p class="set-code">A1</p>
+</div>
+<button aria-label="Download Genetic Apex JSON" class="download-btn pocket" data-file-name="A1.json" data-href="pocket_tcg/A1.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="mythical island a1a a1a.json">
-  <div class="set-info">
-    <h3>Mythical Island</h3>
-    <p class="set-code">A1a</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A1a.json" download="A1a.json" aria-label="Download Mythical Island JSON" data-file-name="A1a.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Mythical Island</h3>
+<p class="set-code">A1a</p>
+</div>
+<button aria-label="Download Mythical Island JSON" class="download-btn pocket" data-file-name="A1a.json" data-href="pocket_tcg/A1a.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="space-time smackdown a2 a2.json">
-  <div class="set-info">
-    <h3>Space-Time Smackdown</h3>
-    <p class="set-code">A2</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A2.json" download="A2.json" aria-label="Download Space-Time Smackdown JSON" data-file-name="A2.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Space-Time Smackdown</h3>
+<p class="set-code">A2</p>
+</div>
+<button aria-label="Download Space-Time Smackdown JSON" class="download-btn pocket" data-file-name="A2.json" data-href="pocket_tcg/A2.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="triumphant light a2a a2a.json">
-  <div class="set-info">
-    <h3>Triumphant Light</h3>
-    <p class="set-code">A2a</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A2a.json" download="A2a.json" aria-label="Download Triumphant Light JSON" data-file-name="A2a.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Triumphant Light</h3>
+<p class="set-code">A2a</p>
+</div>
+<button aria-label="Download Triumphant Light JSON" class="download-btn pocket" data-file-name="A2a.json" data-href="pocket_tcg/A2a.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="shining revelry a2b a2b.json">
-  <div class="set-info">
-    <h3>Shining Revelry</h3>
-    <p class="set-code">A2b</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A2b.json" download="A2b.json" aria-label="Download Shining Revelry JSON" data-file-name="A2b.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Shining Revelry</h3>
+<p class="set-code">A2b</p>
+</div>
+<button aria-label="Download Shining Revelry JSON" class="download-btn pocket" data-file-name="A2b.json" data-href="pocket_tcg/A2b.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="celestial guardians a3 a3.json">
-  <div class="set-info">
-    <h3>Celestial Guardians</h3>
-    <p class="set-code">A3</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A3.json" download="A3.json" aria-label="Download Celestial Guardians JSON" data-file-name="A3.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Celestial Guardians</h3>
+<p class="set-code">A3</p>
+</div>
+<button aria-label="Download Celestial Guardians JSON" class="download-btn pocket" data-file-name="A3.json" data-href="pocket_tcg/A3.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="extradimensional crisis a3a a3a.json">
-  <div class="set-info">
-    <h3>Extradimensional Crisis</h3>
-    <p class="set-code">A3a</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A3a.json" download="A3a.json" aria-label="Download Extradimensional Crisis JSON" data-file-name="A3a.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Extradimensional Crisis</h3>
+<p class="set-code">A3a</p>
+</div>
+<button aria-label="Download Extradimensional Crisis JSON" class="download-btn pocket" data-file-name="A3a.json" data-href="pocket_tcg/A3a.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="eevee grove a3b a3b.json">
-  <div class="set-info">
-    <h3>Eevee Grove</h3>
-    <p class="set-code">A3b</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A3b.json" download="A3b.json" aria-label="Download Eevee Grove JSON" data-file-name="A3b.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Eevee Grove</h3>
+<p class="set-code">A3b</p>
+</div>
+<button aria-label="Download Eevee Grove JSON" class="download-btn pocket" data-file-name="A3b.json" data-href="pocket_tcg/A3b.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="wisdom of sea and sky a4 a4.json">
-  <div class="set-info">
-    <h3>Wisdom of Sea and Sky</h3>
-    <p class="set-code">A4</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A4.json" download="A4.json" aria-label="Download Wisdom of Sea and Sky JSON" data-file-name="A4.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Wisdom of Sea and Sky</h3>
+<p class="set-code">A4</p>
+</div>
+<button aria-label="Download Wisdom of Sea and Sky JSON" class="download-btn pocket" data-file-name="A4.json" data-href="pocket_tcg/A4.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="secluded springs a4a a4a.json">
-  <div class="set-info">
-    <h3>Secluded Springs</h3>
-    <p class="set-code">A4a</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A4a.json" download="A4a.json" aria-label="Download Secluded Springs JSON" data-file-name="A4a.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Secluded Springs</h3>
+<p class="set-code">A4a</p>
+</div>
+<button aria-label="Download Secluded Springs JSON" class="download-btn pocket" data-file-name="A4a.json" data-href="pocket_tcg/A4a.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="deluxe pack: ex a4b a4b.json">
-  <div class="set-info">
-    <h3>Deluxe Pack: ex</h3>
-    <p class="set-code">A4b</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/A4b.json" download="A4b.json" aria-label="Download Deluxe Pack: ex JSON" data-file-name="A4b.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Deluxe Pack: ex</h3>
+<p class="set-code">A4b</p>
+</div>
+<button aria-label="Download Deluxe Pack: ex JSON" class="download-btn pocket" data-file-name="A4b.json" data-href="pocket_tcg/A4b.json" type="button"><span>Download JSON</span></button>
 </article>
 <article class="set-card pocket" data-search="promo a promo-a promo-a.json">
-  <div class="set-info">
-    <h3>Promo A</h3>
-    <p class="set-code">PROMO-A</p>
-  </div>
-  <a class="download-btn pocket" href="pocket_tcg/PROMO-A.json" download="PROMO-A.json" aria-label="Download Promo A JSON" data-file-name="PROMO-A.json"><span>Download JSON</span></a>
+<div class="set-info">
+<h3>Promo A</h3>
+<p class="set-code">PROMO-A</p>
+</div>
+<button aria-label="Download Promo A JSON" class="download-btn pocket" data-file-name="PROMO-A.json" data-href="pocket_tcg/PROMO-A.json" type="button"><span>Download JSON</span></button>
 </article>
 </div></section>
-    </main>
-
-    <section class="steps">
-      <h2>How to Use These Files</h2>
-      <ol>
-        <li>Pick the set you want.</li>
-        <li>Click the <strong>Download JSON</strong> button.</li>
-        <li>The file should save to your Downloads folder or ask where to save, depending on your browser settings.</li>
-        <li>Open the app or tool you want to use.</li>
-        <li>Upload the JSON file when prompted.</li>
-      </ol>
-      <p>No coding required.</p>
-    </section>
-
-    <section class="credits">
-      <h2>Credit and Disclaimer</h2>
-      <p>Credit for the JSON files goes to the <strong>Pokémon TCG Developers</strong> and the Pokémon TCG data/API community. Please support and credit the original data maintainers wherever possible.</p>
-      <p>This is an unofficial fan-made resource. This page is not affiliated with, endorsed by, sponsored by, or approved by Nintendo, The Pokémon Company, Creatures Inc., Game Freak, Pokémon TCG Pocket, or the Pokémon TCG Developers.</p>
-      <p>Pokémon, Pokémon TCG, Pokémon TCG Pocket, card names, card text, artwork, set names, and related trademarks belong to their respective owners.</p>
-    </section>
-
-    <footer>
-      Made for quick, friendly JSON downloads.<br>
+</main>
+<section class="steps">
+<h2>How to Use These Files</h2>
+<ol>
+<li>Pick the set you want.</li>
+<li>Click the <strong>Download JSON</strong> button.</li>
+<li>The file should save to your Downloads folder or ask where to save, depending on your browser settings.</li>
+<li>Open the app or tool you want to use.</li>
+<li>Upload the JSON file when prompted.</li>
+</ol>
+<p>No coding required.</p>
+</section>
+<section class="credits">
+<h2>Credit and Disclaimer</h2>
+<p>Credit for the JSON files goes to the <strong>Pokémon TCG Developers</strong> and the Pokémon TCG data/API community. Please support and credit the original data maintainers wherever possible.</p>
+<p>This is an unofficial fan-made resource. This page is not affiliated with, endorsed by, sponsored by, or approved by Nintendo, The Pokémon Company, Creatures Inc., Game Freak, Pokémon TCG Pocket, or the Pokémon TCG Developers.</p>
+<p>Pokémon, Pokémon TCG, Pokémon TCG Pocket, card names, card text, artwork, set names, and related trademarks belong to their respective owners.</p>
+</section>
+<footer>
+      Made for quick, friendly JSON downloads.<br/>
       If a browser asks where to save the file, choose Downloads.
     </footer>
-  </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <script>
+</div>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script>
     const toast = document.getElementById('toast');
     let toastTimer = null;
 
@@ -1372,37 +1370,47 @@
     }
 
     async function forceDownload(event) {
-      const link = event.currentTarget;
-      const href = link.getAttribute('href');
-      const fileName = link.getAttribute('download') || link.dataset.fileName || href.split('/').pop();
+      const button = event.currentTarget;
+      const href = button.dataset.href;
+      const fileName = button.dataset.fileName || (href ? href.split('/').pop() : 'cards.json');
 
-      if (!href || href === '#') return;
+      if (!href || href === '#') {
+        showToast('This download is not connected yet.');
+        return;
+      }
 
-      event.preventDefault();
       showToast('Preparing ' + fileName + '...');
+      button.disabled = true;
 
       try {
         const response = await fetch(href, { cache: 'no-store' });
         if (!response.ok) throw new Error('File not found: ' + href);
+
         const blob = await response.blob();
-        const url = URL.createObjectURL(blob);
+        const objectUrl = URL.createObjectURL(blob);
+
         const temp = document.createElement('a');
-        temp.href = url;
+        temp.href = objectUrl;
         temp.download = fileName;
+        temp.rel = 'noopener';
         temp.style.display = 'none';
+
         document.body.appendChild(temp);
         temp.click();
         temp.remove();
-        setTimeout(() => URL.revokeObjectURL(url), 1500);
+
+        setTimeout(() => URL.revokeObjectURL(objectUrl), 2000);
         showToast('Downloading ' + fileName);
       } catch (error) {
         console.error(error);
         showToast('Could not download ' + fileName + '. Check that the JSON file exists.');
+      } finally {
+        button.disabled = false;
       }
     }
 
-    document.querySelectorAll('a[download]').forEach(link => {
-      link.addEventListener('click', forceDownload);
+    document.querySelectorAll('button[data-href]').forEach(button => {
+      button.addEventListener('click', forceDownload);
     });
 
     const search = document.getElementById('search');
