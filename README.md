@@ -296,11 +296,5 @@ Pokémon, Pokémon TCG, Pokémon TCG Pocket, card names, card text, artwork, set
 
 ---
 
-# Editing the Download Buttons
-
-Every download button currently points to `#`.
-
-To connect a button to a real JSON file, replace the `#` with the file path.
-
 [main-json-badge]: https://img.shields.io/badge/Download-JSON-2563eb?style=flat-square&labelColor=1f2937
 [pocket-json-badge]: https://img.shields.io/badge/Download-JSON-7c3aed?style=flat-square&labelColor=1f2937
